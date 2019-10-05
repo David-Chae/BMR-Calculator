@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    </head>
+    
+    <body>
+        <section class="section">
+            <div class="row">
+                <h1 class="heading">BMR Calculator</h1>
+            </div>
+        </section>
+        
+        <section class="section">
+            
+            <div class="row">
+            
+                <div class="wrapper">
+                    <div>
+                        <p>AGE</p>
+                        <input id="age_id" class="field" placeholder="Years" required>
+                    </div>
+                    <div>
+                        <p>SEX</p>
+                        <input id="male" name="sex" value="M" checked="checked" type="radio" required>
+                        <label for="male">Male</label>
+                        <input id="female" name="sex" value="F" checked ="checked" type="radio" required>
+                        <label for="female">Female</label>
+                    </div>
+
+                    <div>
+                        <p>WEIGHT</p>
+                        <input id="US_weight" name="weight" value="pounds" checked="checked" type="radio">
+                        <label for="US_weight">Pounds</label>
+                        <input id="Metric_weight" name="weight" value="kilograms" checked ="checked" type="radio">
+                        <label for="Metric_weight">Kilograms</label>
+                    </div>
+                    <div>
+                        <input id="weight_id" class="field" name="weight" class="weight_input" placeholder="Kilograms" type="text" required>
+                    </div>
+
+                    <div>
+                        <p>HEIGHT</p>
+                        <input id="US_height" name="height" value="inches" checked="checked" type="radio">
+                        <label for="US_height">Inches</label>
+                        <input id="Metric_height" name="height" value="centimeter" checked ="checked" type="radio">
+                        <label for="Metric_height">Centimeters</label>
+                    </div>
+                    <div>
+                        <input id="height_id" class="field" name="height" class="height_input" placeholder="Centimeters" type="text" required>
+                    </div>
+
+                    <button id='calculate_btn_id' class="calculate-submit" type="button">Calculate</button>
+
+                </div>
+            </div>
+            
+            
+        
+        </section>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
