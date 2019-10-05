@@ -29,16 +29,14 @@ document.querySelector('#calculate_btn_id').addEventListener('click', function()
         bmr = 10*weight + 6.2*height - 5*age - 161;
     }
     
-    console.log(age);
-    console.log(weight);
-    console.log(height);
-    console.log(sex);
-    console.log(bmr);
+    bmr = parseInt(bmr);
+    
+    
     
     if(isNaN(age) || isNaN(weight) || isNaN(height)){
             cal_btn.insertAdjacentHTML('afterend','<div id="bmr_id">' + 'Please fill out all the fields above.'+ '</div>');
        }else{
-            cal_btn.insertAdjacentHTML('afterend','<div id="bmr_id">' + 'Your BMR is ' + bmr + '</div>');
+            cal_btn.insertAdjacentHTML('afterend','<div id="bmr_id">' + 'Your daily basal metabolic rate is ' + bmr + ' calories per day </div>');
        }
     
 });
@@ -54,21 +52,3 @@ function setSex(){
     
     return sex;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
