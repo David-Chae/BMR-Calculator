@@ -10,7 +10,7 @@
     <body>
         <section class="section">
             <div class="row">
-                <h1 class="heading">BMR Calculator</h1>
+                <h1 class="heading">Basal Metabolic Rate Calculator</h1>
             </div>
         </section>
         
@@ -20,45 +20,47 @@
             
                 <div class="wrapper">
                     <div>
-                        <p>AGE</p>
-                        <input id="age_id" class="field" placeholder="Years" required>
+                        <p class="input-type">AGE</p>
+                        <input id="age_id" class="field" placeholder="your age" required>
                     </div>
                     <div>
-                        <p>SEX</p>
-                        <input id="male" name="sex" value="M" checked="checked" type="radio" required>
-                        <label for="male">Male</label>
+                        <p class="input-type">SEX</p>
+                        <input id="male" name="sex" value="M" checked="checked" type="radio" required>   
+                        <label class="container" for="male">Male</label>
+                        
                         <input id="female" name="sex" value="F" checked ="checked" type="radio" required>
-                        <label for="female">Female</label>
+                        <label class="container" for="female">Female</label>
                     </div>
 
                     <div>
-                        <p>WEIGHT</p>
-                        <input id="US_weight" name="weight" value="pounds" checked="checked" type="radio">
-                        <label for="US_weight">Pounds</label>
-                        <input id="Metric_weight" name="weight" value="kilograms" checked ="checked" type="radio">
-                        <label for="Metric_weight">Kilograms</label>
+                        <p class="input-type">WEIGHT</p>
+                        <input class="radioBox" id="US_weight" name="weight" value="pounds" checked="checked" type="radio">
+                        <label class="container" for="US_weight">Pounds</label>
+                        
+                        <input class="radioBox" id="Metric_weight" name="weight" value="kilograms" checked ="checked" type="radio">
+                        <label class="container" for="Metric_weight">Kilograms</label>
                     </div>
+                    
                     <div>
-                        <input id="weight_id" class="field" name="weight" class="weight_input" placeholder="Kilograms" type="text" required>
+                        <input id="weight_id" class="field" name="weight" class="weight_input" placeholder="your weight" type="text" required>
                     </div>
 
                     <div>
-                        <p>HEIGHT</p>
-                        <input id="US_height" name="height" value="inches" checked="checked" type="radio">
-                        <label for="US_height">Inches</label>
-                        <input id="Metric_height" name="height" value="centimeter" checked ="checked" type="radio">
-                        <label for="Metric_height">Centimeters</label>
+                        <p class="input-type">HEIGHT</p>
+                        <input class="radioBox" id="US_height" name="height" value="inches" checked="checked" type="radio">
+                        <label class="container" for="US_height">Inches</label>
+                        
+                        <input class="radioBox" id="Metric_height" name="height" value="centimeter" checked ="checked" type="radio">
+                        <label class="container" for="Metric_height">Centimeters</label>
                     </div>
                     <div>
-                        <input id="height_id" class="field" name="height" class="height_input" placeholder="Centimeters" type="text" required>
+                        <input id="height_id" class="field" name="height" class="height_input" placeholder="your height" type="text" required>
                     </div>
 
                     <button id='calculate_btn_id' class="calculate-submit" type="button">Calculate</button>
 
                 </div>
             </div>
-            
-            
         
         </section>
         
